@@ -1,0 +1,410 @@
+* {
+    margin: auto;
+    padding: 0;
+    /* overflow-x: hidden; */
+    scrollbar-color: #fff;
+    transition: 0.8s;
+}
+
+nav {
+    background-color: rgb(255, 255, 255, 0.9);
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    z-index: 10;
+}
+
+.dropdown1,
+.dropdown2 {
+    color: rgb(184, 181, 181);
+
+}
+
+.dropdown1 {
+    background: rgb(255, 255, 255);
+    line-height: 2;
+    max-width: 16%;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    right: 63px;
+    bottom: 1105px;
+    z-index: 11;
+    padding: 10px 0 10px 0;
+    border: 1px solid rgb(206, 200, 200,.5);
+    display: none;
+
+}
+
+ul.dropdown1 li {
+    list-style-type: none;
+}
+
+.dropdown1 a {
+    text-decoration: none;
+    color: rgb(184, 181, 181);
+}
+
+.dropdown2 {
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(206, 200, 200,.5);
+    line-height: 2;
+    max-width: 16%;
+    text-align: center;
+    border-radius: 5px;
+    position: relative;
+    left: 68px;
+    padding: 10px 0 10px 0;
+    bottom: 1110px;
+    z-index: 11;
+    display: none;
+}
+
+ul.dropdown2 li {
+    list-style-type: none;
+}
+
+.dropdown2 a {
+    text-decoration: none;
+    color: rgb(184, 181, 181);
+}
+
+
+
+
+.search {
+    position: relative;
+    bottom: 1000px;
+    z-index: 5;
+    background: #fff;
+    background-size: 5%;
+    padding: 2.5%;
+    width: 55%;
+    visibility: hidden;
+}
+
+#search {
+    padding: 21px 410px 20px 21px;
+}
+
+/* BUTTONS */
+
+a:not(nav a, #backgroung-img a, .dropdown2 a, .dropdown1 a, #socials-logo a, a.list, .inline-a, .cookie-bar a, .info a, .summary-reads a, .terms, .subscribe-a, #pages a, #template a) {
+    color: #fff;
+    background: rgb(0, 0, 0, 0.9);
+    padding: 20px 25px;
+    text-decoration: none;
+    border: 1px solid #000;
+}
+
+a:hover:not(nav a, #backgroung-img, #socials-logo a, a.list, footer a.inline-a, .cookie-bar a, .info a, .summary-reads a, .terms, .subscribe-a) {
+    color: #000;
+    background: #fff;
+}
+
+.cookie-bar a,
+nav a,
+.info a,
+.summary-read a {
+    text-decoration: none;
+    color: #000;
+}
+
+h3#name {
+    color: #000;
+    position: relative;
+    left: -7%;
+}
+
+
+.nav-list {
+    display: flex;
+    color: #000;
+    gap: 50px;
+}
+
+
+.right-nav {
+    display: flex;
+    gap: 50px;
+    position: relative;
+    left: 7%;
+    color: #000;
+}
+
+.right-nav #purchase {
+    height: 100%;
+    padding: 20px 20px;
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+.right-nav #purchase:hover {
+    background: #fff;
+    color: #000;
+}
+
+.cookie-bar {
+    position: fixed;
+    z-index: 9;
+    top: 98%;
+    bottom: 100%;
+    /* top: 86% ;  this first and worked at 100 viewport only */
+    background-color: #000;
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cookie-bar h4 {
+    color: #fff;
+    position: relative;
+    left: -5%;
+    padding-bottom: 35px;
+}
+
+
+
+.dismiss {
+    position: relative;
+    left: 75%;
+    bottom: 12px;
+    height: 45%;
+    padding: 10px 25px;
+    background: #fff;
+    color: #000;
+    border: 1px solid #fff;
+}
+
+
+.dismiss:hover,
+.info-a:hover {
+    background: #000;
+    color: #fff;
+}
+
+#backgroung-img {
+    position: relative;
+    text-align: center;
+    top: 5rem;
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+.img-words {
+    color: #fff;
+    position: relative;
+    bottom: 15rem;
+    text-align: center;
+}
+
+p {
+    font-style: italic;
+}
+
+.melb {
+    position: relative;
+    bottom: 80px;
+    text-align: center;
+    max-width: 40%;
+    font-weight: lighter;
+}
+
+
+.just-listed {
+    display: flex;
+    position: relative;
+    right: 100px;
+}
+
+.just-listed img {
+    max-width: 50%;
+    text-align: center;
+}
+
+.words-1 {
+    text-align: center;
+    line-height: 2;
+}
+
+.bbc {
+    display: flex;
+    gap: 20px;
+}
+
+
+.just-listed-2 {
+    display: flex;
+    position: relative;
+}
+
+.just-listed-2 img {
+    max-width: 50%;
+    position: relative;
+    left: 80px;
+}
+
+#section {
+    display: flex;
+    padding: 2% 0;
+    background-color: rgb(145, 145, 145, 0.3);
+    line-height: 2;
+}
+
+.section-words {
+    max-width: 30%;
+    line-height: 2;
+}
+
+#section img {
+    width: 30%;
+    border-radius: 50%;
+}
+
+#testimony {
+    display: flex;
+}
+
+#testimony img {
+    width: 100%;
+}
+
+.testimonial {
+    width: 30%;
+    padding: 1% 10%;
+    text-align: left;
+    line-height: 2;
+    font-size: large;
+    position: relative;
+    top: 100px;
+}
+
+.testimonial-2 {
+    width: 30%;
+    padding: 1% 10%;
+    text-align: left;
+    line-height: 2;
+    font-size: large;
+    position: relative;
+    bottom: 30px;
+}
+
+.info-section {
+    display: flex;
+    background: rgb(0, 0, 0, 0.9);
+    padding: 7% 0;
+}
+
+.info-section img {
+    width: 70%;
+    position: relative;
+    left: 15%;
+}
+
+.info {
+    color: #fff;
+    line-height: 2;
+    max-width: 65%;
+    position: relative;
+    right: 20px;
+}
+
+.info-a {
+    position: relative;
+    /* left: 75%; */
+    bottom: 12px;
+    height: 45%;
+    padding: 15px 25px;
+    background: #fff;
+    color: #000;
+    border: 1px solid #fff;
+}
+
+
+.user {
+    display: flex;
+}
+
+.summary {
+    position: relative;
+    bottom: 250px;
+    left: 180px;
+
+    max-width: 300px;
+}
+
+.summary-img img {
+    width: 50%;
+}
+
+.subscribe {
+    text-align: center;
+}
+
+#email {
+    padding: 15px 50px;
+}
+
+.subscribe-a {
+    color: #fff;
+    background: rgb(0, 0, 0, 0.9);
+    padding: 15px 110px;
+    text-decoration: none;
+    border: 1px solid #000;
+}
+
+.subscribe-a:hover {
+    color: #000;
+    background: #fff;
+}
+
+.terms {
+    color: rgb(0, 0, 0);
+}
+
+footer {
+    position: relative;
+    bottom: -80px;
+    display: flex;
+    background: rgb(0, 0, 0, 0.9);
+    color: #fff;
+    padding: 5% 0 10%;
+}
+
+#socials {
+    max-width: 35%;
+}
+
+#socials-logo {
+    display: flex;
+    position: relative;
+    right: 40px;
+}
+
+#socials-logo a {
+    color: #fff;
+
+}
+
+.pages,
+.template {
+    line-height: 2;
+}
+
+footer a.list {
+    text-decoration: none;
+    color: rgb(131, 131, 131);
+    background-color: transparent;
+}
+
+footer a.list:hover {
+    color: #fff;
+}
+
+.inline-a {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
